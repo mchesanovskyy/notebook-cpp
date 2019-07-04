@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\entities">
+      <UniqueIdentifier>{7b105c07-8068-4f5a-9c35-74cc11ee0182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\abstracts">
+      <UniqueIdentifier>{5cdcd1f7-24c0-40d2-b722-4fb8c85781ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\services">
+      <UniqueIdentifier>{ee5e80e9-3570-40cc-bf3f-85f964b2480c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\abstracts\data">
+      <UniqueIdentifier>{4254a4bf-a5b6-4f23-a3cd-fbfa40a96c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\exceptions">
+      <UniqueIdentifier>{38455f61-5548-42ad-bfcf-ec4b21e33aab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\repositories">
+      <UniqueIdentifier>{101fb0ca-72bc-4126-b8c0-de3c0ec22177}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Header Files\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_user_service.h">
+      <Filter>Header Files\abstracts</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_user_repository.h">
+      <Filter>Header Files\abstracts\data</Filter>
+    </ClInclude>
+    <ClInclude Include="user_service.h">
+      <Filter>Header Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="notebook_exception.h">
+      <Filter>Header Files\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="notebook_error_code.h">
+      <Filter>Header Files\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="file_user_repository.h">
+      <Filter>Header Files\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="base_file_repository.h">
+      <Filter>Header Files\repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_repository.h">
+      <Filter>Header Files\abstracts\data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
