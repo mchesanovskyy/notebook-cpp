@@ -31,6 +31,9 @@
     <Filter Include="Header Files\repositories">
       <UniqueIdentifier>{101fb0ca-72bc-4126-b8c0-de3c0ec22177}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\providers">
+      <UniqueIdentifier>{4b8fc1e3-a79c-4f2f-aff8-564b8eda8133}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">

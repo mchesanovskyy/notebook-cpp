@@ -33,3 +33,5 @@
 .vs/
 Notebook.sln.DotSettings.user
 Debug/
+NotebookConsole/users.txt
+*.user

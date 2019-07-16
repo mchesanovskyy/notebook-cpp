@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{0A5AA2DB-D3C5-4579-A0E7-10EEC8588738}</ProjectGuid>
+    <ProjectGuid>{F5BB3EA5-98A6-4BB2-B022-C673CB0969DE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>NotebookCore</RootNamespace>
+    <RootNamespace>NotebookHashAlgorithms</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -90,29 +90,11 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <BrowseInformation>true</BrowseInformation>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
-    <Bscmake>
-      <PreserveSbr>true</PreserveSbr>
-    </Bscmake>
-    <Lib>
-      <AdditionalLibraryDirectories>
-      </AdditionalLibraryDirectories>
-    </Lib>
-    <ProjectReference>
-      <LinkLibraryDependencies>true</LinkLibraryDependencies>
-    </ProjectReference>
-    <PostBuildEvent>
-      <Command>
-      </Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -165,32 +147,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="abstract_repository.h" />
-    <ClInclude Include="abstract_user_repository.h" />
-    <ClInclude Include="abstract_user_service.h" />
-    <ClInclude Include="base_file_repository.h" />
-    <ClInclude Include="entity.h" />
-    <ClInclude Include="file_user_repository.h" />
-    <ClInclude Include="helpers.h" />
-    <ClInclude Include="notebook_error_code.h" />
-    <ClInclude Include="notebook_exception.h" />
+    <ClInclude Include="hash_algorithm.h" />
+    <ClInclude Include="hash_algorithm_type.h" />
+    <ClInclude Include="hash_helper.h" />
+    <ClInclude Include="sha256.h" />
+    <ClInclude Include="sha256_hash_algorithm.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="user.h" />
-    <ClInclude Include="user_service.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="hash_helper.cpp" />
+    <ClCompile Include="sha256.cpp" />
+    <ClCompile Include="sha256_hash_algorithm.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Notebook.HashAlgorithms\Notebook.HashAlgorithms.vcxproj">
-      <Project>{f5bb3ea5-98a6-4bb2-b022-c673cb0969de}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

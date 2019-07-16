@@ -12,11 +12,11 @@ public:
 		cout << "Username: ";
 		cin >> login;
 
-		string password;
+		string plainTextPassword;
 		cout << "Password: ";
-		cin >> password;
+		cin >> plainTextPassword;
 
-		auto user = context->user_service->get_user_by_credentials(login, password);
+		auto user = context->user_service->get_user_by_credentials(login, plainTextPassword);
 		if (user == nullptr)
 		{
 			cout << "Login or pass is wrong";
